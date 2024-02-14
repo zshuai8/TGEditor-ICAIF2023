@@ -1,0 +1,41 @@
+device: "cuda"
+data_path: "../Chase/edges_lab.csv"
+
+HTNE:
+  neg_size: 10
+  hist_len: 4
+  emb_size: 128
+  batch_size: 128
+  epochs: 25
+  lr: 1.0e-2
+  patience: 100
+  seed: 42
+
+TGEditor:
+  model: "DyGAN"
+  data: "Chase"
+  max_iteration: 100
+  rw_len: 16
+  batch_size: 128
+  H_gen: 100
+  H_disc: 64
+  H_i: 64
+  H_t: 32
+  disten: false
+  emb_dim: 128
+  hist_len: 4
+  num_iter: 3
+  H_inp: 128
+  z_dim: 16
+  lr: 0.0003
+  n_critic: 3
+  gp_weight: 10.0
+  betas: [0.5, 0.9]
+  l2_penalty_disc: 5.0e-5
+  l2_penalty_gen: 1.0e-7
+  temp_start: 5.0
+  seed: 42
+  create_every: 500
+  plot_every: 100
+  num_eval: 20
+  num_edits: 100
