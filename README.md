@@ -59,3 +59,25 @@ TGEDITOR
 ├── medium_AML
 └── docs
 ```
+
+
+Please consider cite
+```
+@inproceedings{10.1145/3604237.3626883,
+author = {Zhang, Shuaicheng and Zhu, Yada and Zhou, Dawei},
+title = {TGEditor: Task-Guided Graph Editing for Augmenting Temporal Financial Transaction Networks},
+year = {2023},
+isbn = {9798400702402},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3604237.3626883},
+doi = {10.1145/3604237.3626883},
+abstract = {Recent years have witnessed a growth of research interest in designing powerful graph mining algorithms to discover and characterize the structural pattern of interests from financial transaction networks, motivated by impactful applications including anti-money laundering, identity protection, product promotion, and service promotion. However, state-of-the-art graph mining algorithms often suffer from high generalization errors due to data sparsity, data noisiness, and data dynamics. In the context of mining information from financial transaction networks, the issues of data sparsity, noisiness, and dynamics become particularly acute. Ensuring accuracy and robustness in such evolving systems is of paramount importance. Motivated by these challenges, we propose a fundamental transition from traditional mining to augmentation in the context of financial transaction networks. To navigate this paradigm shift, we introduce TGEditor, a versatile task-guided temporal graph augmentation framework. This framework has been crafted to concurrently preserve the temporal and topological distribution of input financial transaction networks, whilst leveraging the label information from pertinent downstream tasks, denoted as , inclusive of crucial downstream tasks like fraudulent transaction classification. In particular, to efficiently conduct task-specific augmentation, we propose two network editing operators that can be seamlessly optimized via adversarial training, while simultaneously capturing the dynamics of the data: Add operator aims to recover the missing temporal links due to data sparsity, and Prune operator is formulated to remove irrelevant/noisy temporal links due to data noisiness. Extensive results on financial transaction networks demonstrate that TGEditor 1) well preserves the data distribution of the original graph and 2) notably boosts the performance of the prediction models in the tasks of vertex classification and fraudulent transaction detection.},
+booktitle = {Proceedings of the Fourth ACM International Conference on AI in Finance},
+pages = {219–226},
+numpages = {8},
+keywords = {temporal graph augmentation, generative graph model, Financial transaction networks},
+location = {<conf-loc>, <city>Brooklyn</city>, <state>NY</state>, <country>USA</country>, </conf-loc>},
+series = {ICAIF '23}
+}
+```
