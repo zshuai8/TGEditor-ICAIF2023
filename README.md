@@ -1,5 +1,5 @@
 # TGEditor
-
+Task-Guided Graph Editing for Augmenting Temporal Financial Transaction Networks (ICAIF2023)
 ## Environment Setup
 You can create a conda environment to easily run the code. For example, we can create a virtual environment named `tgeditor`:
 ```
