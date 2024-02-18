@@ -1,9 +1,4 @@
 # TGEditor
-Q: Does it need GPU, would CPU work, and how many?
-It does not necessarily GPU. CPU will fully work, and GPU will expedite part of the program process.
-
-Q: Is it in Python or Pytorch, what packages does it need?
-It is in pytorch. Required packages include: numpy, pytorch, scipy, pandas, matplotlib, concurrent, yaml.
 
 ## Environment Setup
 You can create a conda environment to easily run the code. For example, we can create a virtual environment named `tgeditor`:
@@ -44,7 +39,6 @@ TGEDITOR
 │   ├── requirements.txt
 │   ├── HTNE.py
 │   ├── TGEditor.py
-│   ├── TGEditor_fast.py
 │   ├── train.ipynb
 │   └── utils.py
 ├── README.md
@@ -55,8 +49,6 @@ TGEDITOR
 │   ├── Evaulation results
 │   └── ....
 ├── Chase
-├── small_AML
-├── medium_AML
 └── docs
 ```
 
